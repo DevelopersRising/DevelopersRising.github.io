@@ -1,1 +1,1 @@
-https://github.com/DevelopersRising/DevelopersRising/blob/master/License.txt
+https://github.com/DevelopersRising/DevelopersRising/blob/master/LICENSE.md
