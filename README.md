@@ -1,5 +1,23 @@
 # Github.io Website for Developers Rising
 
+### About
+
+Our goal is to help, connect and inspire. Here are some of the things we've accomplished:
+
+1000+ Meetup Members
+
+20+ Successful Free Meetups
+
+20+ Awesome Speakers
+
+5+ Sponsors And Partners Involved
+
+4+ Active Open Source Repos
+
+Founded 3 Meetup Groups
+
+
+
 ### Information
 
 - License: https://github.com/DevelopersRising/DevelopersRising/blob/master/License.txt
