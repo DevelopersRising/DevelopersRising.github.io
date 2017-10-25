@@ -1,3 +1,5 @@
+NOTE** Replace "YOUR_PASSWORD_HERE" in /serverFiles/mailer.js to your real password, only then it will work.
+
 1. install NodeJS
 2. Open your local repository directory in command prompt
 
