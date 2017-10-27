@@ -7,10 +7,11 @@ var {sendMail} = require('./serverFiles/mailer');
 var port = process.env.PORT || 8080;
 const publicPath = path.join(__dirname,'/public');
 var app = express();
+app.use(bodyParser());
 app.use(express.static(publicPath));
 
 app.get('/',(req,res) => {
-    res.render('index.js');
+    res.render('index.html');
 });
 
 app.post('/feedback',(req,res) => {
@@ -19,6 +20,7 @@ app.post('/feedback',(req,res) => {
         email: req.body.email,
         feedback: req.body.feedback
     };
+    console.log(details);
     sendMail(details,(err,info) => {
         if(err) return console.log(err);
         console.log(info);
