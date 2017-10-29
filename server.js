@@ -20,7 +20,6 @@ app.post('/feedback',(req,res) => {
         email: req.body.email,
         feedback: req.body.feedback
     };
-    console.log(details);
     sendMail(details,(err,info) => {
         if(err) return console.log(err);
         console.log(info);

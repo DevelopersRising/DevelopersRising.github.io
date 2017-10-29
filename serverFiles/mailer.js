@@ -1,10 +1,10 @@
-var nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer');
 
-var transporter = nodemailer.createTransport({
+const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'YOUR_EMAIL_HERE@gmail.com',
-      pass: 'YOUR_PASSWORD_HERE'
+      user: 'YOUR_EMAIL_ID@gmail.com',
+      pass: 'YOUR_PASSWORD'
     }
   });
 
@@ -12,23 +12,23 @@ var transporter = nodemailer.createTransport({
 
     console.log(userInfo);
     var send = `Hi ${userInfo.name}, \n
-  We recieved your Feedback :),
-  Thanks for the feedback. :)
-  Hope to see you soon.\n
-  REGARDS,
-  TEAM DevelopersRising`;
+We recieved your Feedback :),
+Thanks for the feedback. :)
+Hope to see you soon.\n
+REGARDS,
+TEAM DevelopersRising`;
   
-    var sendSelf = `Feedback from ${userInfo.name}, \n
+    let sendSelf = `Feedback from ${userInfo.name}, \n
   ${userInfo.feedback}`;
   
   
-    var mailOptions = {
+    let mailOptions = {
       from: 'DevelopersRising',
       to: userInfo.email,
       subject: 'Thanks For The Feedback',
       text: send
     };
-    var selfMailOptions = {
+    let selfMailOptions = {
       from: userInfo.email,
       to: 'devsrising@gmail.com',
       subject: `Feedback from ${userInfo.name}`,
@@ -39,8 +39,7 @@ var transporter = nodemailer.createTransport({
       if(err){
         return callback(err);
       } else {
-        // return callback(undefined,send);
-        console.log(info.response);
+        return callback(undefined,send);
       }
     });
     transporter.sendMail(mailOptions,(err,info) => {
@@ -48,7 +47,6 @@ var transporter = nodemailer.createTransport({
         return callback(err);
       } else {
         return callback(undefined,send);
-        console.log(info.response);
       }
     });
   };
