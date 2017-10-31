@@ -1,6 +1,8 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 const path = require('path');
+require('dotenv').config()
+
 
 var {sendMail} = require('./serverFiles/mailer');
 

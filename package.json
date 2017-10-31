@@ -10,11 +10,10 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "@types/dotenv": "^4.0.2",
     "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
     "express": "^4.16.2",
     "nodemailer": "^4.3.1"
-  },
-  "devDependencies": {
-    "dotenv": "^4.0.0"
   }
 }
