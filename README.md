@@ -1,5 +1,7 @@
 # Github.io Website for Developers Rising
 
+https://developersrising.herokuapp.com/
+
 ### Information
 
 - License: https://github.com/DevelopersRising/DevelopersRising/blob/master/License.txt
