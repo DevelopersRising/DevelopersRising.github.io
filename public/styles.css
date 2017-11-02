@@ -1,3 +1,13 @@
 body {
 	font-family: 'Varela Round', sans-serif;
 }
+
+.parallax-container {
+	height: 400px;
+}
+
+.partner-logo img {
+  max-height: 100px;
+  max-width: 100%;
+  padding: 20px;
+}
