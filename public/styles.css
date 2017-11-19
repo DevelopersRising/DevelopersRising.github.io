@@ -11,3 +11,8 @@ body {
   max-width: 100%;
   padding: 20px;
 }
+
+.grid-sizer,
+.grid-item { 
+  width: 20%;
+}
